@@ -2,8 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import pool from "./config/db.js";
-// Routes
-import authRoutes from "./routes/authRoutes.js";
+import apiRoutes from "./routes/index.js";  // central routes
 
 dotenv.config();
 
@@ -30,8 +29,7 @@ app.get("/api/test", async (req, res) => {
 
 // -------------------------  API Routes
 
-app.use("/api/auth", authRoutes);
-
+app.use("/api", apiRoutes);
 
 // ------------------------- Start server
 
