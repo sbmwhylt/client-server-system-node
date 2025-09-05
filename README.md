@@ -9,7 +9,7 @@ Frontend/client: React + TailwindCSS + Vite
 - Vite → fast development build tool
 
 Installation: 
-- npm install quickstart-react 
+- npx install quickstart-react 
 
 -----------------------------------------------------
 
